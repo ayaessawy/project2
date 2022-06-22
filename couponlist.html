@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+                    <link   rel="stylesheet"   href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script  src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+
+    </head>
+<body class="body">
+
+<!------------------------------------------->
+      <div class="main-header">
+                 <div class="upper-header">
+                                 <div class="header-container">
+                                           <div class="inner-continer">      
+                                            <p>With a 20% discount, saves 1000$ per year on online shopping. Our annual membership costs $300.</p>
+                                            <button class="upperbutton" type="button" id="signbutton"><span>Sign Up</span></button>
+                                           </div>
+                                 </div>
+                 </div>
+             
+                 <div class="middle-header">
+                             <div class="header-container">
+                                           <div class="inner-continer">
+                                            <div class="logo">
+                                              <a href="#"><img src="https://icms-image.slatic.net/images/ims-web/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png" alt="Daraz"></a>
+                                           </div>
+                                                     
+                                                      <div class="search">
+                                                                         <div class="search-box">
+                                                                                        <input type="text">
+                                                                                        <div class="search-button"></div>
+                                                                                        <div class="button-categiore" id="button-categiore" >
+                                                                                                  <p id="button-categiore1">All categories </p><span><i class="fas fa-caret-down"></i> 
+                                                                                        </div>
+
+                                                                                
+                                                                         </div>
+                                                      </div>
+                                                      <div class="cart">
+                                                                   <div class="box">
+                                                                              <button type="button"  id="discount-button">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-4 h-4 sm:w-5 sm:h-5 mr-0.5 text-cyan-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path></svg><span>Discount Code</span>
+                                                                        </button>
+                                                                            <div class="discountnavbar-list none" id="discountnavbar-list">
+                                                                                            <ul>
+                                                                                                <li><a href="couponlist.html">Discount List</a></li>
+                                                                                                <li><a href="nofound-coupon.html">Your discount</a></li>
+
+                                                                                            </ul>
+                                                                            </div>
+                                                                    <a title="Föreningar" href="/foreningar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-4 h-4 sm:w-5 sm:h-5 mr-0.5 text-cyan-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span class="text-xs font-bold sm:text-base">Brands</span></a>
+                                                                    <button id="login" class="items-center hidden px-1 py-1 sm:flex text-cyan-700 hover:text-cyan-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-4 h-4 sm:w-5 sm:h-5 mr-0.5 text-cyan-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span >Log in</span></button>
+
+                                                                   </div>
+                                                      </div>
+                                                      
+                                           </div>
+                             </div>
+
+                 </div>
+                 <div class="lowerheader">
+                  <div class="header-container">
+                
+
+                      
+                            <div class="navv">
+                              <div class="button-categiore-navbar" id="button-categiore-navbar" >
+                                <span>All categories</span><i class="fas fa-caret-down"></i> 
+               </div>
+                                        <button type="button" class="border-cyan-500 text-cyan-800 bg-white shadow-md active transition" aria-current="page"><span class="no-underline">Online stores</span><span class="no-underline bg-cyan-800   text-white">221</span></span></button>
+                                        <button type="button" class="border-transparent text-gray-800   transition"><span class="underline hover:no-underline">Restaurants</span><span class="bg-gray-100 text-gray-900 no-underline"><span class="no-underline">&nbsp;326</span></span></button>
+                                        <button type="button" class="border-transparent text-gray-800  transition"><span class="underline hover:no-underline">Shops</span><span class="bg-gray-100 text-gray-900 no-underline "><span class="no-underline">&nbsp;415</span></span></button>
+                                        <button type="button" class="border-transparent text-gray-800   transition"><span class="underline hover:no-underline">Hotels</span><span class="bg-gray-100 text-gray-900 no-underline"><span class="no-underline">&nbsp;146</span></span></button>
+                                        <button type="button" class="border-transparent text-gray-800  transition"><span class="underline hover:no-underline">Air Travel</span><span class="bg-gray-100 text-gray-900 no-underline "><span class="no-underline">&nbsp;415</span></span></button>
+                                        <button type="button" class="border-transparent text-gray-800   transition"><span class="underline hover:no-underline">Holidays/Tours</span><span class="bg-gray-100 text-gray-900 no-underline"><span class="no-underline">&nbsp;146</span></span></button>
+                 
+                                        <button id="followus"   type="button" class="border-transparent text-gray-800   transition"><span class="underline hover:no-underline">Follow Us</span><span class=" no-underline"></span></button>
+                                       
+                              </div>
+                           
+                </div>
+        </div>
+               
+      </div>    
+<!------------------------------------------------------------->
+<div class="discountlist-banner">
+
+
+   <h3>Your Discount List</h3>
+
+  <div class="search">
+          <div class="search-box">
+                        <input type="text" placeholder="search">
+                        <div class="search-button"></div>
+                      
+
+                
+          </div>
+</div>
+
+
+
+
+
+</div>
+<!---------------------------------------------------->
+
+<!---------------------------------------------------------->
+<div class="company-logos">
+  <div class="cardd-header">
+  </div>
+  <div class="cardd-content">
+          <div class="cardd-container">
+
+                
+                               <div class="box">
+                                    <a href="#">
+                                               <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Buttericks_logotyp_med_tagline_y4kvbq.png"></div>
+                                               <div class="content">
+                                                              <span>Butterick's</span>
+                                                              <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                                              <div class="button"> <span class="btn" id="couponbutton">Discount Code</span> <div class="code">9xa7</div></div>
+                                                  </div>
+                                       </a> 
+                                  </div>
+                 
+                     
+                            <div class="box">
+                                   <a href="#">
+                                        <div class="image"><img  src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Logo_Cleanmate_stor_qrp4xe.png"></div>
+                                        <div class="content">
+                                                    <span>Cleanmate</span>
+                                                    <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                                    <div class="button"> <span class="btn"  id="couponbutton">Discount Code</span> <div class="code">9xa7</div></div>
+
+
+                                        </div>
+                                  </a>
+                            </div>
+                  
+                 
+                          <div class="box">
+                                  <a href="#">
+                                          <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Hemkop_654x261_bxhijv.png"></div>
+                                          <div class="content">
+                                                    <span>Hemköp</span>
+                                                    <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                                    <div class="button" id="couponbutton" > <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                                                </div>
+                                  </a>
+                          </div>
+            
+              
+                <div class="box">
+                     <a href="#">
+                            <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/LW_logo_no_tagline_red_akpitm.png"></div>
+                            <div class="content">
+                                       <span>Lensway</span>
+                                       <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                       <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                            </div>
+                       </a> 
+                </div>
+             
+         
+                      <div class="box">
+                          <a href="#">
+                                  <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/LMK_logo_r9c2wb.png"></div>
+                                  <div class="content">
+                                            <span>Linas Matkasse</span>
+                                            <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                            <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                                    </div>
+                         </a> 
+                      </div>
+      
+     
+            <div class="box">
+                  <a href="#">
+                        <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Buttericks_logotyp_med_tagline_y4kvbq.png"></div>
+                        <div class="content">
+                                <span>Butterick's</span>
+                                <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                            </div>
+                    </a>
+            </div>
+    
+
+        <div class="box">
+              <a href="#">
+                     <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Buttericks_logotyp_med_tagline_y4kvbq.png"></div>
+                     <div class="content">
+                                <span>Butterick's</span>
+                                <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                          </div>
+              </a>
+        </div>
+   
+      
+              <div class="box">
+                  <a href="#">
+                          <div class="image"><img  src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Logo_Cleanmate_stor_qrp4xe.png"></div>
+                          <div class="content">
+                                    <span>Cleanmate</span>
+                                    <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                    <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                            </div>
+                  </a>
+              </div>
+ 
+              <div class="box">
+                      <a href="#">
+                          <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Hemkop_654x261_bxhijv.png"></div>
+                          <div class="content">
+                                     <span>Hemköp</span>
+                                     <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                     <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                               </div>
+                    </a>
+              </div>
+
+    <div class="box">
+           <a href="#">
+                <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/LW_logo_no_tagline_red_akpitm.png"></div>
+                <div class="content">
+                             <span>Lensway</span>
+                             <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                             <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                    </div>
+              </a>
+    </div>
+ 
+          <div class="box">
+             
+                <a href="#">
+                      <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/LMK_logo_r9c2wb.png"></div>
+                      <div class="content">
+                                  <span>Linas Matkasse</span>
+                                  <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                                  <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                        </div>
+                </a>
+          </div>
+
+<div class="box">
+        <a href="#">
+
+            <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/Buttericks_logotyp_med_tagline_y4kvbq.png"></div>
+            <div class="content">
+                         <span>Butterick's</span>
+                         <h6>Discounts and coupons at similar online stores With a 20% discount</h6>
+                         <div class="button" id="couponbutton"> <span class="btn">Discount Code</span> <div class="code">9xa7</div></div>
+
+                  </div>
+   
+        </a>
+</div>
+
+   </div>     
+</div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+<div class="footer">
+              <div class="box">
+                           <h3>CUSTOMER SERVICE</h3>
+                           <ul>
+                                 <li><a href="#">08-592 504 14</a></li>
+                                 <li><a href="#">Contact Us</a></li>
+                                 <li><a href="#">Terms of use</a></li>
+
+                           </ul>
+                      
+              </div>
+              <div class="box">
+                                <h3>ASSOCIATIONS</h3>
+                                <ul>
+                                      <li><a href="#">Join your association</a></li>
+                                      <li><a href="#">Our associations</a></li>
+                                      <li><a href="#">Association material</a></li>
+
+                                </ul>
+              </div>
+              <div class="box">
+                          <h3>CONTACT US</h3>
+                          <ul>
+                                <li><a href="#">Apply</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            
+
+                          </ul>
+              </div>
+                <div class="box">
+                          <h3>SUPPORT</h3>
+                          <ul>
+                                <li><a href="#">Affiliated associations</a></li>
+                                <li><a href="#">Activation code</a></li>
+                            
+
+                          </ul>
+                </div>
+                <div class="subscribe">
+                             <h3>SUBSCRIBE TO NEW DISCOUNTS
+                            </h3>
+                            <p>No spam, just nice discounts and new online stores</p>
+                            <input placeholder="du@exempel.se">
+                            <button>Subscribe</button>
+                           
+                       
+                </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------->
+     <!---------------------------------------------------------------------------------------------------
+                LOG IN SECTION{box of log in when cliick on button log in this section appear}
+  <!---------------------------------------------------------------------------------------------------------->
+  <div class="login-section" id="login-section">
+    <div class="close-icon2" id="close2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+  </div>
+ 
+  <div class="form">
+           <h3>  <span class="left">log in:</span> </h3>    <span class="right"><a href="#">Forgot your password?</a></span>
+           <p>Email address</p> 
+           <input placeholder="">
+           <p>Password</p> 
+           <input placeholder="">
+           <button>log in</button>
+              <p  class="sendlink"><a href="#">Send login link</a></div></p> 
+</div>
+<!---------------------------------------------------------------------
+        ACTIVEte CODE SECTION
+<!--------------------------------------------------------------------->
+<div class="aktevriacode-section" id="aktevriacode-section">
+<div class="close-icon" id="close">
+ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+</div>
+<h3>Register your activation code</h3>
+<div class="input">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-5 h-5 ml-2 text-gray-500 -mt-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <input type="text" maxlength="16" placeholder="Ange kod" class="w-full pl-8 font-sans text-xs rounded-sm sm:w-84">
+
+  <span class="px-1 py-2 text-xs">&nbsp;</span>
+</div>
+<span> <a href="#">Activate code</a></span>
+<div class="noactivecode">
+    <h3>No activation key
+      od?<br/>
+      Buy a one-year membership for SEK 300</h3>
+      <p class="pt-2 pb-4 text-xs text-gray-600 sm:text-sm">Support your favorite club while getting access to all our discounts.</p>
+</div>
+<div class="form-section">
+     <div class="form">
+                 <h3>Search for association or charity names (optional)
+                </h3>
+                <p>50% of your payment goes in full to the association / charity</p>
+                <input placeholder="City, name or association reference">
+                <h2>What is included</h2>
+                <ul>
+                      <li>All our online stores   </li>
+                     
+                      <li>Restaurant Chance </li>
+                      <li>All gift cards</li>
+
+                </ul>
+                <h2>Approve</h2>
+                <input type="checkbox" class="checkbox-round" /><label>I have read and accept the terms found in  terms of use</label>
+
+     </div>
+</div>
+
+
+     
+</div>
+<!------------------------------------------------------------------------------------------------------------
+FOLLOW US SECTION{ LOGO +SOCIAL MEDIA} when click on follow us button this section appear
+<!------------------------------------------------------------------------------------------------------------------->
+<div class="followus-section none"  id="followus-section">
+                        <div class="logo">
+                          <a href="#"><img src="https://icms-image.slatic.net/images/ims-web/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png" alt="Daraz"></a>
+                      </div>
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                          <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                          <li><a href="#"><i class="fab fa-line"></i></a></li>
+                          <li><a href="#"><i class="fab fa-reddit-square"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitch"></i></a></li>
+                          <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+
+                        
+                      </ul>
+
+</div>
+<!----------------------------------------------------------------------------------
+DROPdown BOX SECTION when click on categorie button it is appear
+<!---------------------------------------------------------->
+
+
+<div class="drop-downbox none" id="drop-downbox" >
+<ul  id="dropdown">
+<li class="hover dropdown"  value="Groceries & Pets" >
+           <i class="fas fa-shopping-basket icon11"></i>
+      <a href="#">  <span>Groceries ,Pets</span> <span class="icon">  <i class="fas fa-angle-right"></i> </span>  </a><!-------first item of maincategorie and it is sub categorie---->
+      <div class="dropdown-content"><!-------this div contain sub categorie of  Groceries ,Pets ----------------------------------------->
+                          <a href="#" class="dropdown1"><span >Beverages</span> </a><!-------categorie >>Beverages>> ---->
+                               
+                                  <div class="dropdown1-content" style="top:0%;"><!-------this div contain sub categorie of  Groceries ,Pets>>Beverages ----------------------------------------->
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+                                       <a href="#"><span>Buety tools</span></a>
+
+                                  </div>
+                         
+                           <a href="#"  class="dropdown1"><span>Fresh product</span> <span class="icon"><!------   Groceries ,Pets>>Fresh product ---->  
+                                  <i class="fas fa-angle-right"></i>          </span> </a>
+                             
+                           <div class="dropdown1-content" style="top:0%;"><!-------this div contain sub categorie of  Groceries ,Pets>>Beverages >>Fresh product----------------------------------------->
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+                                  <a href="#"><span>Fresh product1</span></a>
+
+                             
+
+                        </div>
+                           <a href="#">
+                             <span >Beverages</span>
+                         </a>
+                         <a href="#"><span>Fresh product</span></a>
+                        
+                         <a href="#">
+                           <span >Beverages</span>
+                       </a>
+                       <a href="#"><span>Fresh product</span></a>
+                       <a href="#">
+                         <span >Beverages</span>
+                     </a>
+                     <a href="#"><span>Fresh product</span></a>
+                     <a href="#">
+                       <span >Beverages</span>
+                   </a>
+                   <a href="#"><span>Fresh product</span></a>
+                  
+                          
+     </div>
+</li>
+
+<li class="hover dropdown" value="Health &amp; Beauty"> 
+<i class="fas fa-medkit icon11"></i>
+<a href="#"> <span> Health,Beauty</span> <span class="icon"> <i class="fas fa-angle-right"></i> </span> </a>   
+<div class="dropdown-content" style="top:-130%">
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+   <a href="#"><span>Buety tools</span></a>
+
+ 
+</div>
+</li>
+<li class="hover dropdown" value="Women's Fashion">
+<i class="fas fa-tshirt icon11"></i>
+<a href="#">  <span>Women's Fashion</span> <span class="icon"> <i class="fas fa-angle-right"></i>  </span>       </a>
+
+<div class="dropdown-content" style="top:-230%">
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+       <a href="#"><span>Womes Fashion</span></a>
+
+
+</div>
+</li>
+<li class="hover dropdown" value="men's Fashion">
+<i class="fas fa-tshirt icon11"></i>
+<a href="#">   <span> men's Fashion</span>  <span class="icon"> <i class="fas fa-angle-right"></i>  </span>   </a> 
+    
+<div class="dropdown-content"  style="top:-330%">
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+             <a href="#"><span>Mens Fashion</span></a>
+
+</div> 
+</li>
+<li  class="hover dropdown" value="Babies & toyes">
+ <i class="fas fa-baby-carriage icon11"></i>
+      <a href="#"><span>Babies ,toyes</span>    <span class="icon"> <i class="fas fa-angle-right"></i>  </span>  </a>
+          
+ <div class="dropdown-content"  style="top:-430%">
+           <a href="#"><span>Babies & toyes</span></a>
+           <a href="#"><span>Babies & toyes</span></a>
+           <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+              <a href="#"><span>Babies & toyes</span></a>
+  
+</div>
+</li>
+<li  class="hover dropdown" value="Home & Lifestyle">
+             <i class="fas fa-home icon11"></i> 
+          <a href="#">  <span>Home ,Lifestyle</span><span class="icon"> <i class="fas fa-angle-right"></i>  </span>     </a>  
+          <div class="dropdown-content"  style="top:-530%">
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                        <a href="#"><span>Home & Lifestyle</span></a>
+                      
+
+       </div>
+</li>
+<li class="hover dropdown" value="Electronic Devices">
+    <i class="fas fa-laptop-medical icon11"></i>
+    <a href="#"><span>Electronic Devices</span>   <span class="icon"> <i class="fas fa-angle-right"></i>  </span>   </a>
+    <div class="dropdown-content"  style="top:-630%">
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+                <a href="#"><span>Electronic Devices</span></a>
+
+     
+ </div>
+</li>
+<li class="hover dropdown" value="Electronic Accessories"> 
+      <i class="fas fa-laptop-medical icon11"></i> 
+     <a href="#">   <span> Accessories</span> <span class="icon"> <i class="fas fa-angle-right"></i>  </span>    </a>  
+     <div class="dropdown-content"  style="top:-730%">
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+                  <a href="#"> <span>Electronic Accessories</span>  </a>
+
+   
+   </div>
+</li>
+
+<li class="hover dropdown" value="TV & Home Appliances">
+ <i class="fas fa-blender-phone icon11" ></i>
+ <a href="#"><span>Home Appliances</span>   <span class="icon"> <i class="fas fa-angle-right"></i>  </span>   </a>
+ <div class="dropdown-content"  style="top:-830%">
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+            <a href="#"><span>TV & Home Appliances</span>   </a>
+
+
+</div>
+</li>
+<li class="hover dropdown" value="Sports & Outdoory">
+<i class="fas fa-cloud-sun icon11"></i> 
+  <a href="#"> <span> Outdoory</span> <span class="icon"> <i class="fas fa-angle-right"></i>  </span>    </a>
+  <div class="dropdown-content"  style="top:-930%">
+                <a href="#"><span>Outdoory</span> </a>
+                <a href="#"><span>Sports & Outdoory</span> </a>   
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+                      <a href="#"><span>Sports & Outdoory</span> </a>
+  
+</div>
+</li>
+<li class="hover dropdown" value="Watches, Bags & Jewellery">
+  <i class="far fa-clock icon11"></i>
+   <a href="#"><span>Watches,Jewellery</span> <span class="icon"> <i class="fas fa-angle-right"></i>  </span>     </a>
+   <div class="dropdown-content"  style="top:-1030%">
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+                <a href="#"><span>Watches, Bags</span> </a>
+
+     
+ </div>
+</li>
+<li class="hover dropdown" value="Automotive & Motorbike">
+<i class="fas fa-motorcycle icon11"></i>
+<a href="#">  <span>Motorbike</span>  <span class="icon"> <i class="fas fa-angle-right"></i>  </span>   </a>    
+<div class="dropdown-content"  style="top:-1130%">
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+         <a href="#"><span>Automotive & Motorbike</span> </a>
+
+
+</div>
+</li>
+
+
+
+
+
+
+</ul>
+</div>
+
+
+
+<!-------------------------------------------------------------------------------------------------------
+           dicount  CODE SECTION  when click in discount code button in box logo
+------------------------------------------------------------------------->
+<div class="couponcode-section" id="couponcodesection">
+                    
+                     <div class="code-container">
+                                <div class="close-icon" id="close3">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                </div>
+                                  <h3>Extra 10% Off Women's Watches From Deal Leaf</h3>
+                                  <hr/>
+                                  <div class="image"><img src="https://res.cloudinary.com/onlinerabatt/image/upload/c_scale,h_48/LW_logo_no_tagline_red_akpitm.png"></div>
+                                  <span class="code">xpo56556xl</span>
+                                  <div class="info">
+                                        <span>show information</span>
+                                        <ul>
+                                          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-line"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-reddit-square"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-twitch"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                                        </ul>
+                                  </div>
+                     </div>
+</div>
+<!---------------------------------------------------------------------------------------------------------------->
+    <script  src="all.js"></script>
+    <script  src="index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script  src="js/html5shiv.js"></script>
+
+</body>
+
